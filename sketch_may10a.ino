@@ -1,9 +1,9 @@
-int L_EN = PIN_D0;
-int L_DIR_A = PIN_D1; // Forward --> Left Motor
-int L_DIR_B = PIN_D2; // Backward --> Left Motor
-int R_EN = PIN_B7;
-int R_DIR_A = PIN_B2; // Forward --> Right Motor
-int R_DIR_B = PIN_B3; // Backward --> Right Motor
+int L_EN = PIN_B7;
+int L_DIR_A = PIN_B2; // Forward --> Left Motor
+int L_DIR_B = PIN_B3; // Backward --> Left Motor
+int R_EN = PIN_D0;
+int R_DIR_A = PIN_D1; // Forward --> Right Motor
+int R_DIR_B = PIN_D2; // Backward --> Right Motor
 
 
 void setup() {
@@ -23,6 +23,6 @@ void loop() {
   digitalWrite(PIN_D0, HIGH);
   digitalWrite(PIN_D1, HIGH);
 
-  digitalWrite(PIN_B7, HIGH);
-  digitalWrite(PIN_B2, HIGH);
+   digitalWrite(PIN_B7, HIGH);
+   digitalWrite(PIN_B2, HIGH);
 }
