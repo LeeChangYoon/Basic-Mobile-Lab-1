@@ -1,12 +1,12 @@
 int L_EN = PIN_B7;
-int L_DIR_A = PIN_B2; // Forward --> Left Motor
-int L_DIR_B = PIN_B3; // Backward --> Left Motor
+int L_DIR_A = PIN_B3; // Forward --> Left Motor
+int L_DIR_B = PIN_B2; // Backward --> Left Motor
 int R_EN = PIN_D0;
-int R_DIR_A = PIN_D1; // Forward --> Right Motor
-int R_DIR_B = PIN_D2; // Backward --> Right Motor
+int R_DIR_A = PIN_D2; // Forward --> Right Motor
+int R_DIR_B = PIN_D1; // Backward --> Right Motor
 
-int L_SW;             // Left pin of the Switch
-int R_SW;             // Right pin of the Switch
+int L_SW = PIN_F0;             // Left pin of the Switch
+int R_SW = PIN_F1;            // Right pin of the Switch
 
 
 void setup() {
@@ -36,7 +36,7 @@ void loop() {
   digitalWrite(R_EN, HIGH);
     
   // Switch fuction
-  if (digitalRead(L_SW) == 0) {    
+  if (digitalWrite(L_SW) == 0) {    
     digitalWrite(L_DIR_B, LOW);
     digitalWrite(L_DIR_A, HIGH);
   }
@@ -45,7 +45,7 @@ void loop() {
     digitalWrite(L_DIR_B, HIGH);
   }
 
-  if (digitalRead(R_SW) == 0) {    
+  if (digitalWrite(R_SW) == 0) {    
     digitalWrite(R_DIR_B, LOW);
     digitalWrite(R_DIR_A, HIGH);
   }
