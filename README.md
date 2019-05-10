@@ -1,8 +1,11 @@
 # Basic-Mobile-Lab-1
 This repository is for basic mobile lab project 1
 
-## The circuit of the Teckbot 
+## The Structure of Teckbot
+![](2.PNG)
 
+## The Circuit of the Main Board
+![](1.PNG)
 
 ## 2019.05.10
 1. We make Tekbot to go forward, by using arduino IDE.
