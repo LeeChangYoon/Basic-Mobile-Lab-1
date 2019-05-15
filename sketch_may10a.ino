@@ -36,7 +36,7 @@ void loop() {
   digitalWrite(R_EN, HIGH);
     
   // Switch fuction
-  if (digitalWrite(L_SW) == 0) {    
+  if (digitalRead(L_SW) == 0) {    
     digitalWrite(L_DIR_B, LOW);
     digitalWrite(L_DIR_A, HIGH);
   }
@@ -45,7 +45,7 @@ void loop() {
     digitalWrite(L_DIR_B, HIGH);
   }
 
-  if (digitalWrite(R_SW) == 0) {    
+  if (digitalRead(R_SW) == 0) {    
     digitalWrite(R_DIR_B, LOW);
     digitalWrite(R_DIR_A, HIGH);
   }
