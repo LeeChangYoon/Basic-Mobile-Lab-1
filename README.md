@@ -16,3 +16,6 @@ This repository is for basic mobile lab project 1
 1. We learned how to connect the main board to computer in AVR studio.
 2. We have to make file in ATmega32U4.
 3. Attatched the file which references the previous arduino code.
+
+### Initialization
+![](3.PNG)
