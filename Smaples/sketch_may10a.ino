@@ -1,5 +1,5 @@
-#define F_CPU 16000000
-#include<avr/io.h> 
+#define F_CPU 16000000  //-> CPU Clock 설정
+#include<avr/io.h>   // -> input/output을 가지고 있는 헤더파일
 #include<util/delay.h> // -> delay를 가지고 있는 헤더파일
 
 /*
