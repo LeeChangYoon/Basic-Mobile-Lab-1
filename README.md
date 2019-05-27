@@ -19,3 +19,9 @@ This repository is for basic mobile lab project 1
 
 ### Initialization
 ![](3.PNG)
+
+## 2019.05.27
+1. Prototype attaached.
+2. Added Start and Stop fuctions.
+3. Added Function of directions (Forward, Backward, Left, Right).
+4. Atached headerfiles --> Global.h, Sound.h
