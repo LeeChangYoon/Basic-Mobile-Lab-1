@@ -8,5 +8,3 @@ enum tone_scale
 
 uint16_t frequency_return(uint16_t fre);
 void tone(uint8_t scale, uint16_t delay);
-void delay_ms(int ms);
-
