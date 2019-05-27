@@ -20,6 +20,12 @@ This repository is for basic mobile lab project 1
 ### Initialization
 ![](3.PNG)
 
+## 2019.05.24
+1. We learend how to make and use functions.
+2. We learned how to make sounds by using buzzer --> there's some error in _delay_ms() function.
+3. We learned how to use timer/counter interrupt.
+4. Now we now how to use PWM.
+
 ## 2019.05.27
 1. Prototype attaached.
 2. Added Start and Stop fuctions.
