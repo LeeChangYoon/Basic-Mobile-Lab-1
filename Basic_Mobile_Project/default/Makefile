@@ -1,11 +1,11 @@
 ###############################################################################
-# Makefile for the project Basic_Mobile_Project
+# Makefile for the project Project
 ###############################################################################
 
 ## General Flags
-PROJECT = Basic_Mobile_Project
+PROJECT = Project
 MCU = atmega32u4
-TARGET = Basic_Mobile_Project.elf
+TARGET = Project.elf
 CC = avr-gcc
 
 CPP = avr-g++
@@ -25,7 +25,7 @@ ASMFLAGS += -x assembler-with-cpp -Wa,-gdwarf2
 
 ## Linker flags
 LDFLAGS = $(COMMON)
-LDFLAGS +=  -Wl,-Map=Basic_Mobile_Project.map
+LDFLAGS +=  -Wl,-Map=Project.map
 
 
 ## Intel Hex file production flags
@@ -37,22 +37,19 @@ HEX_EEPROM_FLAGS += --change-section-lma .eeprom=0 --no-change-warnings
 
 
 ## Objects that must be built in order to link
-OBJECTS = Main.o Directions.o Sound.o 
+OBJECTS = Main.o Direction.o 
 
 ## Objects explicitly added by the user
 LINKONLYOBJECTS = 
 
 ## Build
-all: $(TARGET) Basic_Mobile_Project.hex Basic_Mobile_Project.eep Basic_Mobile_Project.lss size
+all: $(TARGET) Project.hex Project.eep Project.lss size
 
 ## Compile
 Main.o: ../Main.c
 	$(CC) $(INCLUDES) $(CFLAGS) -c  $<
 
-Directions.o: ../Directions.c
-	$(CC) $(INCLUDES) $(CFLAGS) -c  $<
-
-Sound.o: ../Sound.c
+Direction.o: ../Direction.c
 	$(CC) $(INCLUDES) $(CFLAGS) -c  $<
 
 ##Link
@@ -75,7 +72,7 @@ size: ${TARGET}
 ## Clean target
 .PHONY: clean
 clean:
-	-rm -rf $(OBJECTS) Basic_Mobile_Project.elf dep/* Basic_Mobile_Project.hex Basic_Mobile_Project.eep Basic_Mobile_Project.lss Basic_Mobile_Project.map
+	-rm -rf $(OBJECTS) Project.elf dep/* Project.hex Project.eep Project.lss Project.map
 
 
 ## Other dependencies
