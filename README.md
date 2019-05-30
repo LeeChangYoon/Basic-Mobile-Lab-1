@@ -32,3 +32,10 @@ This repository is for basic mobile lab project 1
 3. Added Function of directions (Forward, Backward, Left, Right).
 4. Atached headerfiles --> Global.h, Sound.h
 5. Added comments
+
+## 2019.05.29
+1. Deleted the prevoius version.
+2. Attached new version.
+3. Realized polling interrupt method.
+4. Realized sound functions.
+5. Fixed some of the functions related to directions.

@@ -24,7 +24,7 @@ return 0;
 
 void Forward(uint8_t speed) //Function for moving robot. Speed : 0 ~ 255
 {
-PORTB |= (0 << 3); // Motor Direction
+PORTB |= (1 << 3); // Motor Direction
 
 PORTD |= (1 << 1); // Motor Direction
 OCR0A = speed;
