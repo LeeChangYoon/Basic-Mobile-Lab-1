@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "Global.h"
 
 int main() {
@@ -91,6 +92,8 @@ int main() {
 }
 
 =======
+=======
+>>>>>>> parent of 8962eb5... Add files via upload
 #include "Global.h"
 #include "Sound.h"
 
