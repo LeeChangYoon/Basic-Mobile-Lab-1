@@ -1,0 +1,1338 @@
+
+Main.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000012  00800100  000007dc  00000870  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000007dc  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000003  00800112  00800112  00000882  2**0
+                  ALLOC
+  3 .stab         000006cc  00000000  00000000  00000884  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  4 .stabstr      00000085  00000000  00000000  00000f50  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_aranges 00000080  00000000  00000000  00000fd5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_pubnames 00000158  00000000  00000000  00001055  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_info   000009c7  00000000  00000000  000011ad  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_abbrev 0000044d  00000000  00000000  00001b74  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_line   00000a91  00000000  00000000  00001fc1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_frame  00000140  00000000  00000000  00002a54  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_str    000001d5  00000000  00000000  00002b94  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_loc    00000337  00000000  00000000  00002d69  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_pubtypes 000000df  00000000  00000000  000030a0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 56 00 	jmp	0xac	; 0xac <__ctors_end>
+   4:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+   8:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+   c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  10:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  14:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  18:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  1c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  20:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  24:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  28:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  2c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  30:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  34:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  38:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  3c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  40:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  44:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  48:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  4c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  50:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  54:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  58:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  5c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  60:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  64:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  68:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  6c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  70:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  74:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  78:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  7c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  80:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  84:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  88:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  8c:	0c 94 75 00 	jmp	0xea	; 0xea <__vector_35>
+  90:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  94:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  98:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  9c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  a0:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  a4:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  a8:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+
+000000ac <__ctors_end>:
+  ac:	11 24       	eor	r1, r1
+  ae:	1f be       	out	0x3f, r1	; 63
+  b0:	cf ef       	ldi	r28, 0xFF	; 255
+  b2:	d5 e0       	ldi	r29, 0x05	; 5
+  b4:	de bf       	out	0x3e, r29	; 62
+  b6:	cd bf       	out	0x3d, r28	; 61
+
+000000b8 <__do_copy_data>:
+  b8:	11 e0       	ldi	r17, 0x01	; 1
+  ba:	a0 e0       	ldi	r26, 0x00	; 0
+  bc:	b1 e0       	ldi	r27, 0x01	; 1
+  be:	ec ed       	ldi	r30, 0xDC	; 220
+  c0:	f7 e0       	ldi	r31, 0x07	; 7
+  c2:	02 c0       	rjmp	.+4      	; 0xc8 <__do_copy_data+0x10>
+  c4:	05 90       	lpm	r0, Z+
+  c6:	0d 92       	st	X+, r0
+  c8:	a2 31       	cpi	r26, 0x12	; 18
+  ca:	b1 07       	cpc	r27, r17
+  cc:	d9 f7       	brne	.-10     	; 0xc4 <__do_copy_data+0xc>
+
+000000ce <__do_clear_bss>:
+  ce:	11 e0       	ldi	r17, 0x01	; 1
+  d0:	a2 e1       	ldi	r26, 0x12	; 18
+  d2:	b1 e0       	ldi	r27, 0x01	; 1
+  d4:	01 c0       	rjmp	.+2      	; 0xd8 <.do_clear_bss_start>
+
+000000d6 <.do_clear_bss_loop>:
+  d6:	1d 92       	st	X+, r1
+
+000000d8 <.do_clear_bss_start>:
+  d8:	a5 31       	cpi	r26, 0x15	; 21
+  da:	b1 07       	cpc	r27, r17
+  dc:	e1 f7       	brne	.-8      	; 0xd6 <.do_clear_bss_loop>
+  de:	0e 94 95 00 	call	0x12a	; 0x12a <main>
+  e2:	0c 94 ec 03 	jmp	0x7d8	; 0x7d8 <_exit>
+
+000000e6 <__bad_interrupt>:
+  e6:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000ea <__vector_35>:
+#include "Global.h"
+
+ISR(TIMER3_OVF_vect) {
+  ea:	1f 92       	push	r1
+  ec:	0f 92       	push	r0
+  ee:	0f b6       	in	r0, 0x3f	; 63
+  f0:	0f 92       	push	r0
+  f2:	11 24       	eor	r1, r1
+  f4:	8f 93       	push	r24
+  f6:	9f 93       	push	r25
+
+	TCNT3 = 0xffff-7812; // Every 1 second
+  f8:	8b e7       	ldi	r24, 0x7B	; 123
+  fa:	91 ee       	ldi	r25, 0xE1	; 225
+  fc:	90 93 95 00 	sts	0x0095, r25
+ 100:	80 93 94 00 	sts	0x0094, r24
+	blink_led = !blink_led;
+ 104:	81 e0       	ldi	r24, 0x01	; 1
+ 106:	90 91 14 01 	lds	r25, 0x0114
+ 10a:	91 11       	cpse	r25, r1
+ 10c:	80 e0       	ldi	r24, 0x00	; 0
+ 10e:	80 93 14 01 	sts	0x0114, r24
+
+	if(blink_led == 0) {
+ 112:	88 23       	and	r24, r24
+ 114:	11 f4       	brne	.+4      	; 0x11a <__vector_35+0x30>
+			PORTD |= (1 << PD6);
+ 116:	5e 9a       	sbi	0x0b, 6	; 11
+ 118:	01 c0       	rjmp	.+2      	; 0x11c <__vector_35+0x32>
+		}
+
+else{
+		PORTD &= ~(1 << PD6);
+ 11a:	5e 98       	cbi	0x0b, 6	; 11
+		}
+	}
+ 11c:	9f 91       	pop	r25
+ 11e:	8f 91       	pop	r24
+ 120:	0f 90       	pop	r0
+ 122:	0f be       	out	0x3f, r0	; 63
+ 124:	0f 90       	pop	r0
+ 126:	1f 90       	pop	r1
+ 128:	18 95       	reti
+
+0000012a <main>:
+
+
+int main() {
+
+	DDRB = 0b10101100; 	/*  PB7 --> Left motor enable bit
+ 12a:	8c ea       	ldi	r24, 0xAC	; 172
+ 12c:	84 b9       	out	0x04, r24	; 4
+							PB3 --> Left motor forward bit
+							PB2 --> Left motor backward bit
+
+							PB5 --> Buzzer enable bit */
+
+	DDRD = 0b01000111;	/* 	PD0 --> Right motor enable bit
+ 12e:	87 e4       	ldi	r24, 0x47	; 71
+ 130:	8a b9       	out	0x0a, r24	; 10
+							PD2 --> Right motor forward bit
+							PD1 --> Right motor backward bit
+
+							PD6 --> LED bit */
+
+	DDRF = 0b00000000;	/*  PF1 --> Left button
+ 132:	10 ba       	out	0x10, r1	; 16
+							PF0 --> Right button */
+	PORTF = 0b00000011;
+ 134:	83 e0       	ldi	r24, 0x03	; 3
+ 136:	81 bb       	out	0x11, r24	; 17
+
+	TCCR0A = 0b11110001;    // PWM, Phase and Frequency Correct
+ 138:	81 ef       	ldi	r24, 0xF1	; 241
+ 13a:	84 bd       	out	0x24, r24	; 36
+	TCCR0B = 0b00000100;    // Prescaler 256
+ 13c:	84 e0       	ldi	r24, 0x04	; 4
+ 13e:	85 bd       	out	0x25, r24	; 37
+
+	TCCR3A = 0b00000000;    // Normal
+ 140:	10 92 90 00 	sts	0x0090, r1
+	TCCR3B = 0b00000101;    // Prescaler 1024
+ 144:	85 e0       	ldi	r24, 0x05	; 5
+ 146:	80 93 91 00 	sts	0x0091, r24
+
+	TIMSK3 = 0b00000001;	// Time interrupt enable
+ 14a:	81 e0       	ldi	r24, 0x01	; 1
+ 14c:	80 93 71 00 	sts	0x0071, r24
+	TCNT3 = 0xffff - 60535; // Every 0.1 second
+ 150:	88 e8       	ldi	r24, 0x88	; 136
+ 152:	93 e1       	ldi	r25, 0x13	; 19
+ 154:	90 93 95 00 	sts	0x0095, r25
+ 158:	80 93 94 00 	sts	0x0094, r24
+	
+	blink_led = 0;
+ 15c:	10 92 14 01 	sts	0x0114, r1
+	EN = 0;
+ 160:	10 92 13 01 	sts	0x0113, r1
+ 164:	10 92 12 01 	sts	0x0112, r1
+ 168:	17 c0       	rjmp	.+46     	; 0x198 <main+0x6e>
+	
+	while(1) {
+		while (EN == 0) {
+			if (PINF & (1 << 1)) {
+ 16a:	79 9b       	sbis	0x0f, 1	; 15
+ 16c:	03 c0       	rjmp	.+6      	; 0x174 <main+0x4a>
+				if (PINF & (1 << 0)) {
+ 16e:	78 9b       	sbis	0x0f, 0	; 15
+ 170:	03 c0       	rjmp	.+6      	; 0x178 <main+0x4e>
+ 172:	02 c0       	rjmp	.+4      	; 0x178 <main+0x4e>
+				else {
+					Stop();
+				}
+			}
+			else {
+				if (PINF & (1 << 0)) {
+ 174:	78 9b       	sbis	0x0f, 0	; 15
+ 176:	03 c0       	rjmp	.+6      	; 0x17e <main+0x54>
+					Stop();
+ 178:	0e 94 55 01 	call	0x2aa	; 0x2aa <Stop>
+ 17c:	0d c0       	rjmp	.+26     	; 0x198 <main+0x6e>
+				}
+				else {
+					StartSound();  /// output start sound();
+ 17e:	0e 94 0e 03 	call	0x61c	; 0x61c <StartSound>
+					Start();
+ 182:	0e 94 50 01 	call	0x2a0	; 0x2a0 <Start>
+					EN++;
+ 186:	80 91 12 01 	lds	r24, 0x0112
+ 18a:	90 91 13 01 	lds	r25, 0x0113
+ 18e:	01 96       	adiw	r24, 0x01	; 1
+ 190:	90 93 13 01 	sts	0x0113, r25
+ 194:	80 93 12 01 	sts	0x0112, r24
+	
+	blink_led = 0;
+	EN = 0;
+	
+	while(1) {
+		while (EN == 0) {
+ 198:	80 91 12 01 	lds	r24, 0x0112
+ 19c:	90 91 13 01 	lds	r25, 0x0113
+ 1a0:	00 97       	sbiw	r24, 0x00	; 0
+ 1a2:	19 f3       	breq	.-58     	; 0x16a <main+0x40>
+ 1a4:	75 c0       	rjmp	.+234    	; 0x290 <main+0x166>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 1a6:	8f ef       	ldi	r24, 0xFF	; 255
+ 1a8:	91 ee       	ldi	r25, 0xE1	; 225
+ 1aa:	a4 e0       	ldi	r26, 0x04	; 4
+ 1ac:	81 50       	subi	r24, 0x01	; 1
+ 1ae:	90 40       	sbci	r25, 0x00	; 0
+ 1b0:	a0 40       	sbci	r26, 0x00	; 0
+ 1b2:	e1 f7       	brne	.-8      	; 0x1ac <main+0x82>
+ 1b4:	00 c0       	rjmp	.+0      	; 0x1b6 <main+0x8c>
+ 1b6:	00 00       	nop
+			}
+		}
+
+		while (EN != 0) {
+			_delay_ms(100);
+			if (PINF & (1 << 1)) {
+ 1b8:	79 9b       	sbis	0x0f, 1	; 15
+ 1ba:	23 c0       	rjmp	.+70     	; 0x202 <main+0xd8>
+				if (PINF & (1 << 0)) {
+ 1bc:	78 9b       	sbis	0x0f, 0	; 15
+ 1be:	04 c0       	rjmp	.+8      	; 0x1c8 <main+0x9e>
+					Forward(50);
+ 1c0:	82 e3       	ldi	r24, 0x32	; 50
+ 1c2:	0e 94 5a 01 	call	0x2b4	; 0x2b4 <Forward>
+ 1c6:	64 c0       	rjmp	.+200    	; 0x290 <main+0x166>
+				}
+				else {
+					Stop();
+ 1c8:	0e 94 55 01 	call	0x2aa	; 0x2aa <Stop>
+ 1cc:	8f ef       	ldi	r24, 0xFF	; 255
+ 1ce:	91 ee       	ldi	r25, 0xE1	; 225
+ 1d0:	a4 e0       	ldi	r26, 0x04	; 4
+ 1d2:	81 50       	subi	r24, 0x01	; 1
+ 1d4:	90 40       	sbci	r25, 0x00	; 0
+ 1d6:	a0 40       	sbci	r26, 0x00	; 0
+ 1d8:	e1 f7       	brne	.-8      	; 0x1d2 <main+0xa8>
+ 1da:	00 c0       	rjmp	.+0      	; 0x1dc <main+0xb2>
+ 1dc:	00 00       	nop
+					_delay_ms(100);
+					LeftSound();
+ 1de:	0e 94 c8 02 	call	0x590	; 0x590 <LeftSound>
+					Backward(100);       
+ 1e2:	84 e6       	ldi	r24, 0x64	; 100
+ 1e4:	0e 94 61 01 	call	0x2c2	; 0x2c2 <Backward>
+ 1e8:	8f ef       	ldi	r24, 0xFF	; 255
+ 1ea:	93 ed       	ldi	r25, 0xD3	; 211
+ 1ec:	a0 e3       	ldi	r26, 0x30	; 48
+ 1ee:	81 50       	subi	r24, 0x01	; 1
+ 1f0:	90 40       	sbci	r25, 0x00	; 0
+ 1f2:	a0 40       	sbci	r26, 0x00	; 0
+ 1f4:	e1 f7       	brne	.-8      	; 0x1ee <main+0xc4>
+ 1f6:	00 c0       	rjmp	.+0      	; 0x1f8 <main+0xce>
+ 1f8:	00 00       	nop
+					_delay_ms(1000); 
+					Left(100);          
+ 1fa:	84 e6       	ldi	r24, 0x64	; 100
+ 1fc:	0e 94 68 01 	call	0x2d0	; 0x2d0 <Left>
+ 200:	1e c0       	rjmp	.+60     	; 0x23e <main+0x114>
+ 202:	8f ef       	ldi	r24, 0xFF	; 255
+ 204:	91 ee       	ldi	r25, 0xE1	; 225
+ 206:	a4 e0       	ldi	r26, 0x04	; 4
+ 208:	81 50       	subi	r24, 0x01	; 1
+ 20a:	90 40       	sbci	r25, 0x00	; 0
+ 20c:	a0 40       	sbci	r26, 0x00	; 0
+ 20e:	e1 f7       	brne	.-8      	; 0x208 <main+0xde>
+ 210:	00 c0       	rjmp	.+0      	; 0x212 <main+0xe8>
+ 212:	00 00       	nop
+					blink_led++;
+				}
+			}
+			else {
+				_delay_ms(100);
+				if (PINF & (1 << 0)) {
+ 214:	78 9b       	sbis	0x0f, 0	; 15
+ 216:	1b c0       	rjmp	.+54     	; 0x24e <main+0x124>
+					Stop();
+ 218:	0e 94 55 01 	call	0x2aa	; 0x2aa <Stop>
+					RightSound(); 
+ 21c:	0e 94 7a 02 	call	0x4f4	; 0x4f4 <RightSound>
+					Backward(100);  
+ 220:	84 e6       	ldi	r24, 0x64	; 100
+ 222:	0e 94 61 01 	call	0x2c2	; 0x2c2 <Backward>
+ 226:	8f ef       	ldi	r24, 0xFF	; 255
+ 228:	93 ed       	ldi	r25, 0xD3	; 211
+ 22a:	a0 e3       	ldi	r26, 0x30	; 48
+ 22c:	81 50       	subi	r24, 0x01	; 1
+ 22e:	90 40       	sbci	r25, 0x00	; 0
+ 230:	a0 40       	sbci	r26, 0x00	; 0
+ 232:	e1 f7       	brne	.-8      	; 0x22c <main+0x102>
+ 234:	00 c0       	rjmp	.+0      	; 0x236 <main+0x10c>
+ 236:	00 00       	nop
+					_delay_ms(1000); 
+					Right(100);          
+ 238:	84 e6       	ldi	r24, 0x64	; 100
+ 23a:	0e 94 6f 01 	call	0x2de	; 0x2de <Right>
+ 23e:	8f ef       	ldi	r24, 0xFF	; 255
+ 240:	99 e6       	ldi	r25, 0x69	; 105
+ 242:	a8 e1       	ldi	r26, 0x18	; 24
+ 244:	81 50       	subi	r24, 0x01	; 1
+ 246:	90 40       	sbci	r25, 0x00	; 0
+ 248:	a0 40       	sbci	r26, 0x00	; 0
+ 24a:	e1 f7       	brne	.-8      	; 0x244 <main+0x11a>
+ 24c:	1a c0       	rjmp	.+52     	; 0x282 <main+0x158>
+					_delay_ms(500);  
+					blink_led++;
+				
+				}
+				else {
+					Stop();
+ 24e:	0e 94 55 01 	call	0x2aa	; 0x2aa <Stop>
+					BothSound();
+ 252:	0e 94 34 02 	call	0x468	; 0x468 <BothSound>
+					Backward(100);       
+ 256:	84 e6       	ldi	r24, 0x64	; 100
+ 258:	0e 94 61 01 	call	0x2c2	; 0x2c2 <Backward>
+ 25c:	8f ef       	ldi	r24, 0xFF	; 255
+ 25e:	93 ed       	ldi	r25, 0xD3	; 211
+ 260:	a0 e3       	ldi	r26, 0x30	; 48
+ 262:	81 50       	subi	r24, 0x01	; 1
+ 264:	90 40       	sbci	r25, 0x00	; 0
+ 266:	a0 40       	sbci	r26, 0x00	; 0
+ 268:	e1 f7       	brne	.-8      	; 0x262 <main+0x138>
+ 26a:	00 c0       	rjmp	.+0      	; 0x26c <main+0x142>
+ 26c:	00 00       	nop
+					_delay_ms(1000); 
+					Right(100);          
+ 26e:	84 e6       	ldi	r24, 0x64	; 100
+ 270:	0e 94 6f 01 	call	0x2de	; 0x2de <Right>
+ 274:	8f ef       	ldi	r24, 0xFF	; 255
+ 276:	93 ed       	ldi	r25, 0xD3	; 211
+ 278:	a0 e3       	ldi	r26, 0x30	; 48
+ 27a:	81 50       	subi	r24, 0x01	; 1
+ 27c:	90 40       	sbci	r25, 0x00	; 0
+ 27e:	a0 40       	sbci	r26, 0x00	; 0
+ 280:	e1 f7       	brne	.-8      	; 0x27a <main+0x150>
+ 282:	00 c0       	rjmp	.+0      	; 0x284 <main+0x15a>
+ 284:	00 00       	nop
+					_delay_ms(1000);  
+					blink_led++;
+ 286:	80 91 14 01 	lds	r24, 0x0114
+ 28a:	8f 5f       	subi	r24, 0xFF	; 255
+ 28c:	80 93 14 01 	sts	0x0114, r24
+					EN++;
+				}
+			}
+		}
+
+		while (EN != 0) {
+ 290:	80 91 12 01 	lds	r24, 0x0112
+ 294:	90 91 13 01 	lds	r25, 0x0113
+ 298:	00 97       	sbiw	r24, 0x00	; 0
+ 29a:	09 f0       	breq	.+2      	; 0x29e <main+0x174>
+ 29c:	84 cf       	rjmp	.-248    	; 0x1a6 <main+0x7c>
+ 29e:	7c cf       	rjmp	.-264    	; 0x198 <main+0x6e>
+
+000002a0 <Start>:
+#include "Global.h"
+
+void Start()
+{
+	PORTB = 0b10000000; // Turn on the left motor.
+ 2a0:	80 e8       	ldi	r24, 0x80	; 128
+ 2a2:	85 b9       	out	0x05, r24	; 5
+	PORTD = 0b00000001; // Turn on the right motor.
+ 2a4:	81 e0       	ldi	r24, 0x01	; 1
+ 2a6:	8b b9       	out	0x0b, r24	; 11
+}
+ 2a8:	08 95       	ret
+
+000002aa <Stop>:
+
+void Stop()
+{
+	PORTB = 0b10001100; // Stop left motor.
+ 2aa:	8c e8       	ldi	r24, 0x8C	; 140
+ 2ac:	85 b9       	out	0x05, r24	; 5
+	PORTD = 0b00000111; // Stop right motor.
+ 2ae:	87 e0       	ldi	r24, 0x07	; 7
+ 2b0:	8b b9       	out	0x0b, r24	; 11
+}
+ 2b2:	08 95       	ret
+
+000002b4 <Forward>:
+
+void Forward(uint8_t speed) //Function for moving forward. Speed : 0 ~ 255.
+{
+	PORTB |= (1 << PB3); PORTB &= ~(1 << PB2); // Motor Direction.
+ 2b4:	2b 9a       	sbi	0x05, 3	; 5
+ 2b6:	2a 98       	cbi	0x05, 2	; 5
+	PORTD |= (1 << PD2); PORTD &= ~(1 << PD1); // Motor Direction.
+ 2b8:	5a 9a       	sbi	0x0b, 2	; 11
+ 2ba:	59 98       	cbi	0x0b, 1	; 11
+	OCR0A = speed;
+ 2bc:	87 bd       	out	0x27, r24	; 39
+	OCR0B = speed;
+ 2be:	88 bd       	out	0x28, r24	; 40
+}
+ 2c0:	08 95       	ret
+
+000002c2 <Backward>:
+
+void Backward(uint8_t speed) //Function for moving backward. Speed : 0 ~ 255.
+{
+	PORTB |= (1 << PB2); PORTB &= ~(1 << PB3); // Motor Direction.
+ 2c2:	2a 9a       	sbi	0x05, 2	; 5
+ 2c4:	2b 98       	cbi	0x05, 3	; 5
+	PORTD |= (1 << PD1); PORTD &= ~(1 << PD2); // Motor Direction.
+ 2c6:	59 9a       	sbi	0x0b, 1	; 11
+ 2c8:	5a 98       	cbi	0x0b, 2	; 11
+	OCR0A = speed;
+ 2ca:	87 bd       	out	0x27, r24	; 39
+	OCR0B = speed;
+ 2cc:	88 bd       	out	0x28, r24	; 40
+}
+ 2ce:	08 95       	ret
+
+000002d0 <Left>:
+
+void Left(uint8_t speed) // Function for turning left. Speed : 0 ~ 255.
+{
+	PORTB |= (1 << PB3); PORTB &= ~(1 << PB2); // Motor Direction.
+ 2d0:	2b 9a       	sbi	0x05, 3	; 5
+ 2d2:	2a 98       	cbi	0x05, 2	; 5
+	PORTD |= (1 << PD1); PORTD &= ~(1 << PD2); // Motor Direction.
+ 2d4:	59 9a       	sbi	0x0b, 1	; 11
+ 2d6:	5a 98       	cbi	0x0b, 2	; 11
+	OCR0A = speed;
+ 2d8:	87 bd       	out	0x27, r24	; 39
+	OCR0B = speed;	
+ 2da:	88 bd       	out	0x28, r24	; 40
+}
+ 2dc:	08 95       	ret
+
+000002de <Right>:
+
+void Right(uint8_t speed) // Function for turninng right. Speed : 0 ~ 255.
+{
+	PORTB |= (1 << PB2); PORTB &= ~(1 << PB3); // Motor Direction.
+ 2de:	2a 9a       	sbi	0x05, 2	; 5
+ 2e0:	2b 98       	cbi	0x05, 3	; 5
+	PORTD |= (1 << PD2); PORTD &= ~(1 << PD1); // Motor Direction.
+ 2e2:	5a 9a       	sbi	0x0b, 2	; 11
+ 2e4:	59 98       	cbi	0x0b, 1	; 11
+	OCR0A = speed;
+ 2e6:	87 bd       	out	0x27, r24	; 39
+	OCR0B = speed;
+ 2e8:	88 bd       	out	0x28, r24	; 40
+}
+ 2ea:	08 95       	ret
+
+000002ec <LED>:
+
+uint8_t blink_led;
+
+void LED() {
+
+	DDRD = 0b01000000; // PD6 OUT for LED
+ 2ec:	80 e4       	ldi	r24, 0x40	; 64
+ 2ee:	8a b9       	out	0x0a, r24	; 10
+	TCCR3A = 0b00000000; // Normal
+ 2f0:	10 92 90 00 	sts	0x0090, r1
+	TCCR3B = 0b00000101; //prescaler 1024
+ 2f4:	85 e0       	ldi	r24, 0x05	; 5
+ 2f6:	80 93 91 00 	sts	0x0091, r24
+	TIMSK3 = 0b00000001;
+ 2fa:	81 e0       	ldi	r24, 0x01	; 1
+ 2fc:	80 93 71 00 	sts	0x0071, r24
+	TCNT3 = 0xffff-7812; // Every 1 second
+ 300:	8b e7       	ldi	r24, 0x7B	; 123
+ 302:	91 ee       	ldi	r25, 0xE1	; 225
+ 304:	90 93 95 00 	sts	0x0095, r25
+ 308:	80 93 94 00 	sts	0x0094, r24
+	sei(); //Interrupt Enable
+ 30c:	78 94       	sei
+	
+	}
+ 30e:	08 95       	ret
+
+00000310 <tone1>:
+
+
+//////////////////////////////////////////////////// One-pitch Negative Output //////////////////////////////////////////////////////////////////////////////////////////////////
+
+void tone1(uint8_t scale, uint16_t delay)
+{
+ 310:	cf 92       	push	r12
+ 312:	df 92       	push	r13
+ 314:	ef 92       	push	r14
+ 316:	ff 92       	push	r15
+ 318:	0f 93       	push	r16
+ 31a:	1f 93       	push	r17
+ 31c:	cf 93       	push	r28
+ 31e:	df 93       	push	r29
+	OC1_PERIOD = frequency_return(tone_array[scale]); //period 
+ 320:	c8 2f       	mov	r28, r24
+ 322:	d0 e0       	ldi	r29, 0x00	; 0
+ 324:	cc 0f       	add	r28, r28
+ 326:	dd 1f       	adc	r29, r29
+ 328:	c0 50       	subi	r28, 0x00	; 0
+ 32a:	df 4f       	sbci	r29, 0xFF	; 255
+{
+	int8_t period_1 = 2; // period 2us
+	int set_period = 0;
+	int16_t return_fre = 0;
+
+	set_period = 1000000 / fre;
+ 32c:	28 81       	ld	r18, Y
+ 32e:	39 81       	ldd	r19, Y+1	; 0x01
+ 330:	40 e0       	ldi	r20, 0x00	; 0
+ 332:	50 e0       	ldi	r21, 0x00	; 0
+ 334:	80 e4       	ldi	r24, 0x40	; 64
+ 336:	c8 2e       	mov	r12, r24
+ 338:	82 e4       	ldi	r24, 0x42	; 66
+ 33a:	d8 2e       	mov	r13, r24
+ 33c:	8f e0       	ldi	r24, 0x0F	; 15
+ 33e:	e8 2e       	mov	r14, r24
+ 340:	f1 2c       	mov	r15, r1
+ 342:	c7 01       	movw	r24, r14
+ 344:	b6 01       	movw	r22, r12
+ 346:	0e 94 af 03 	call	0x75e	; 0x75e <__divmodsi4>
+	return_fre = set_period / period_1;
+ 34a:	c9 01       	movw	r24, r18
+ 34c:	02 e0       	ldi	r16, 0x02	; 2
+ 34e:	10 e0       	ldi	r17, 0x00	; 0
+ 350:	b8 01       	movw	r22, r16
+ 352:	0e 94 9c 03 	call	0x738	; 0x738 <__divmodhi4>
+
+//////////////////////////////////////////////////// One-pitch Negative Output //////////////////////////////////////////////////////////////////////////////////////////////////
+
+void tone1(uint8_t scale, uint16_t delay)
+{
+	OC1_PERIOD = frequency_return(tone_array[scale]); //period 
+ 356:	70 93 87 00 	sts	0x0087, r23
+ 35a:	60 93 86 00 	sts	0x0086, r22
+{
+	int8_t period_1 = 2; // period 2us
+	int set_period = 0;
+	int16_t return_fre = 0;
+
+	set_period = 1000000 / fre;
+ 35e:	28 81       	ld	r18, Y
+ 360:	39 81       	ldd	r19, Y+1	; 0x01
+ 362:	40 e0       	ldi	r20, 0x00	; 0
+ 364:	50 e0       	ldi	r21, 0x00	; 0
+ 366:	c7 01       	movw	r24, r14
+ 368:	b6 01       	movw	r22, r12
+ 36a:	0e 94 af 03 	call	0x75e	; 0x75e <__divmodsi4>
+	return_fre = set_period / period_1;
+ 36e:	c9 01       	movw	r24, r18
+ 370:	b8 01       	movw	r22, r16
+ 372:	0e 94 9c 03 	call	0x738	; 0x738 <__divmodhi4>
+//////////////////////////////////////////////////// One-pitch Negative Output //////////////////////////////////////////////////////////////////////////////////////////////////
+
+void tone1(uint8_t scale, uint16_t delay)
+{
+	OC1_PERIOD = frequency_return(tone_array[scale]); //period 
+	OC1A_WIDTH = frequency_return(tone_array[scale]) / 20; //width
+ 376:	cb 01       	movw	r24, r22
+ 378:	64 e1       	ldi	r22, 0x14	; 20
+ 37a:	70 e0       	ldi	r23, 0x00	; 0
+ 37c:	0e 94 88 03 	call	0x710	; 0x710 <__udivmodhi4>
+ 380:	70 93 89 00 	sts	0x0089, r23
+ 384:	60 93 88 00 	sts	0x0088, r22
+ 388:	8f ef       	ldi	r24, 0xFF	; 255
+ 38a:	91 ee       	ldi	r25, 0xE1	; 225
+ 38c:	a4 e0       	ldi	r26, 0x04	; 4
+ 38e:	81 50       	subi	r24, 0x01	; 1
+ 390:	90 40       	sbci	r25, 0x00	; 0
+ 392:	a0 40       	sbci	r26, 0x00	; 0
+ 394:	e1 f7       	brne	.-8      	; 0x38e <tone1+0x7e>
+ 396:	00 c0       	rjmp	.+0      	; 0x398 <tone1+0x88>
+ 398:	00 00       	nop
+	_delay_ms(100);
+}
+ 39a:	df 91       	pop	r29
+ 39c:	cf 91       	pop	r28
+ 39e:	1f 91       	pop	r17
+ 3a0:	0f 91       	pop	r16
+ 3a2:	ff 90       	pop	r15
+ 3a4:	ef 90       	pop	r14
+ 3a6:	df 90       	pop	r13
+ 3a8:	cf 90       	pop	r12
+ 3aa:	08 95       	ret
+
+000003ac <frequency_return>:
+{
+	int8_t period_1 = 2; // period 2us
+	int set_period = 0;
+	int16_t return_fre = 0;
+
+	set_period = 1000000 / fre;
+ 3ac:	9c 01       	movw	r18, r24
+ 3ae:	40 e0       	ldi	r20, 0x00	; 0
+ 3b0:	50 e0       	ldi	r21, 0x00	; 0
+ 3b2:	60 e4       	ldi	r22, 0x40	; 64
+ 3b4:	72 e4       	ldi	r23, 0x42	; 66
+ 3b6:	8f e0       	ldi	r24, 0x0F	; 15
+ 3b8:	90 e0       	ldi	r25, 0x00	; 0
+ 3ba:	0e 94 af 03 	call	0x75e	; 0x75e <__divmodsi4>
+	return_fre = set_period / period_1;
+ 3be:	c9 01       	movw	r24, r18
+ 3c0:	62 e0       	ldi	r22, 0x02	; 2
+ 3c2:	70 e0       	ldi	r23, 0x00	; 0
+ 3c4:	0e 94 9c 03 	call	0x738	; 0x738 <__divmodhi4>
+
+	return return_fre;
+}
+ 3c8:	cb 01       	movw	r24, r22
+ 3ca:	08 95       	ret
+
+000003cc <tone>:
+
+//////////////////////////////////////////////////// 1/2-pitch Negative Output //////////////////////////////////////////////////////////////////////////////////////////////////
+
+void tone(uint8_t scale, uint16_t delay)
+{
+ 3cc:	cf 92       	push	r12
+ 3ce:	df 92       	push	r13
+ 3d0:	ef 92       	push	r14
+ 3d2:	ff 92       	push	r15
+ 3d4:	0f 93       	push	r16
+ 3d6:	1f 93       	push	r17
+ 3d8:	cf 93       	push	r28
+ 3da:	df 93       	push	r29
+	OC1_PERIOD = frequency_return(tone_array[scale]); //period 
+ 3dc:	c8 2f       	mov	r28, r24
+ 3de:	d0 e0       	ldi	r29, 0x00	; 0
+ 3e0:	cc 0f       	add	r28, r28
+ 3e2:	dd 1f       	adc	r29, r29
+ 3e4:	c0 50       	subi	r28, 0x00	; 0
+ 3e6:	df 4f       	sbci	r29, 0xFF	; 255
+{
+	int8_t period_1 = 2; // period 2us
+	int set_period = 0;
+	int16_t return_fre = 0;
+
+	set_period = 1000000 / fre;
+ 3e8:	28 81       	ld	r18, Y
+ 3ea:	39 81       	ldd	r19, Y+1	; 0x01
+ 3ec:	40 e0       	ldi	r20, 0x00	; 0
+ 3ee:	50 e0       	ldi	r21, 0x00	; 0
+ 3f0:	60 e4       	ldi	r22, 0x40	; 64
+ 3f2:	c6 2e       	mov	r12, r22
+ 3f4:	62 e4       	ldi	r22, 0x42	; 66
+ 3f6:	d6 2e       	mov	r13, r22
+ 3f8:	6f e0       	ldi	r22, 0x0F	; 15
+ 3fa:	e6 2e       	mov	r14, r22
+ 3fc:	f1 2c       	mov	r15, r1
+ 3fe:	c7 01       	movw	r24, r14
+ 400:	b6 01       	movw	r22, r12
+ 402:	0e 94 af 03 	call	0x75e	; 0x75e <__divmodsi4>
+	return_fre = set_period / period_1;
+ 406:	c9 01       	movw	r24, r18
+ 408:	02 e0       	ldi	r16, 0x02	; 2
+ 40a:	10 e0       	ldi	r17, 0x00	; 0
+ 40c:	b8 01       	movw	r22, r16
+ 40e:	0e 94 9c 03 	call	0x738	; 0x738 <__divmodhi4>
+
+//////////////////////////////////////////////////// 1/2-pitch Negative Output //////////////////////////////////////////////////////////////////////////////////////////////////
+
+void tone(uint8_t scale, uint16_t delay)
+{
+	OC1_PERIOD = frequency_return(tone_array[scale]); //period 
+ 412:	70 93 87 00 	sts	0x0087, r23
+ 416:	60 93 86 00 	sts	0x0086, r22
+{
+	int8_t period_1 = 2; // period 2us
+	int set_period = 0;
+	int16_t return_fre = 0;
+
+	set_period = 1000000 / fre;
+ 41a:	28 81       	ld	r18, Y
+ 41c:	39 81       	ldd	r19, Y+1	; 0x01
+ 41e:	40 e0       	ldi	r20, 0x00	; 0
+ 420:	50 e0       	ldi	r21, 0x00	; 0
+ 422:	c7 01       	movw	r24, r14
+ 424:	b6 01       	movw	r22, r12
+ 426:	0e 94 af 03 	call	0x75e	; 0x75e <__divmodsi4>
+	return_fre = set_period / period_1;
+ 42a:	c9 01       	movw	r24, r18
+ 42c:	b8 01       	movw	r22, r16
+ 42e:	0e 94 9c 03 	call	0x738	; 0x738 <__divmodhi4>
+//////////////////////////////////////////////////// 1/2-pitch Negative Output //////////////////////////////////////////////////////////////////////////////////////////////////
+
+void tone(uint8_t scale, uint16_t delay)
+{
+	OC1_PERIOD = frequency_return(tone_array[scale]); //period 
+	OC1A_WIDTH = frequency_return(tone_array[scale]) / 20; //width
+ 432:	cb 01       	movw	r24, r22
+ 434:	64 e1       	ldi	r22, 0x14	; 20
+ 436:	70 e0       	ldi	r23, 0x00	; 0
+ 438:	0e 94 88 03 	call	0x710	; 0x710 <__udivmodhi4>
+ 43c:	70 93 89 00 	sts	0x0089, r23
+ 440:	60 93 88 00 	sts	0x0088, r22
+ 444:	8f ef       	ldi	r24, 0xFF	; 255
+ 446:	90 e7       	ldi	r25, 0x70	; 112
+ 448:	a2 e0       	ldi	r26, 0x02	; 2
+ 44a:	81 50       	subi	r24, 0x01	; 1
+ 44c:	90 40       	sbci	r25, 0x00	; 0
+ 44e:	a0 40       	sbci	r26, 0x00	; 0
+ 450:	e1 f7       	brne	.-8      	; 0x44a <tone+0x7e>
+ 452:	00 c0       	rjmp	.+0      	; 0x454 <tone+0x88>
+ 454:	00 00       	nop
+	_delay_ms(50);
+}
+ 456:	df 91       	pop	r29
+ 458:	cf 91       	pop	r28
+ 45a:	1f 91       	pop	r17
+ 45c:	0f 91       	pop	r16
+ 45e:	ff 90       	pop	r15
+ 460:	ef 90       	pop	r14
+ 462:	df 90       	pop	r13
+ 464:	cf 90       	pop	r12
+ 466:	08 95       	ret
+
+00000468 <BothSound>:
+
+
+int BothSound()
+{
+
+	TCCR1A = 0b10000000; // PWM, OC1A On, Phase and Frequency Correct 
+ 468:	80 e8       	ldi	r24, 0x80	; 128
+ 46a:	80 93 80 00 	sts	0x0080, r24
+	TCCR1B = 0b00010010; //prescaler 8	
+ 46e:	82 e1       	ldi	r24, 0x12	; 18
+ 470:	80 93 81 00 	sts	0x0081, r24
+
+	sei(); //Interrupt Enable
+ 474:	78 94       	sei
+
+	
+		int dulation = 100;
+
+		tone(Do, dulation); 	//Do Sound
+ 476:	81 e0       	ldi	r24, 0x01	; 1
+ 478:	64 e6       	ldi	r22, 0x64	; 100
+ 47a:	70 e0       	ldi	r23, 0x00	; 0
+ 47c:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(0, 50);
+ 480:	80 e0       	ldi	r24, 0x00	; 0
+ 482:	62 e3       	ldi	r22, 0x32	; 50
+ 484:	70 e0       	ldi	r23, 0x00	; 0
+ 486:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(Mi, dulation); 	//Mi Sound
+ 48a:	83 e0       	ldi	r24, 0x03	; 3
+ 48c:	64 e6       	ldi	r22, 0x64	; 100
+ 48e:	70 e0       	ldi	r23, 0x00	; 0
+ 490:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(0, 50);
+ 494:	80 e0       	ldi	r24, 0x00	; 0
+ 496:	62 e3       	ldi	r22, 0x32	; 50
+ 498:	70 e0       	ldi	r23, 0x00	; 0
+ 49a:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(Sol, dulation);  	//Sol Sound
+ 49e:	85 e0       	ldi	r24, 0x05	; 5
+ 4a0:	64 e6       	ldi	r22, 0x64	; 100
+ 4a2:	70 e0       	ldi	r23, 0x00	; 0
+ 4a4:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(0, 50);
+ 4a8:	80 e0       	ldi	r24, 0x00	; 0
+ 4aa:	62 e3       	ldi	r22, 0x32	; 50
+ 4ac:	70 e0       	ldi	r23, 0x00	; 0
+ 4ae:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(Do, dulation); 	//Do Sound
+ 4b2:	81 e0       	ldi	r24, 0x01	; 1
+ 4b4:	64 e6       	ldi	r22, 0x64	; 100
+ 4b6:	70 e0       	ldi	r23, 0x00	; 0
+ 4b8:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(0, 50);
+ 4bc:	80 e0       	ldi	r24, 0x00	; 0
+ 4be:	62 e3       	ldi	r22, 0x32	; 50
+ 4c0:	70 e0       	ldi	r23, 0x00	; 0
+ 4c2:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(Mi, dulation); 	//Mi Sound
+ 4c6:	83 e0       	ldi	r24, 0x03	; 3
+ 4c8:	64 e6       	ldi	r22, 0x64	; 100
+ 4ca:	70 e0       	ldi	r23, 0x00	; 0
+ 4cc:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(0, 50);
+ 4d0:	80 e0       	ldi	r24, 0x00	; 0
+ 4d2:	62 e3       	ldi	r22, 0x32	; 50
+ 4d4:	70 e0       	ldi	r23, 0x00	; 0
+ 4d6:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(Sol, dulation);  	//Sol Sound
+ 4da:	85 e0       	ldi	r24, 0x05	; 5
+ 4dc:	64 e6       	ldi	r22, 0x64	; 100
+ 4de:	70 e0       	ldi	r23, 0x00	; 0
+ 4e0:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(0, 50);
+ 4e4:	80 e0       	ldi	r24, 0x00	; 0
+ 4e6:	62 e3       	ldi	r22, 0x32	; 50
+ 4e8:	70 e0       	ldi	r23, 0x00	; 0
+ 4ea:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+	
+
+	return 0;
+}
+ 4ee:	80 e0       	ldi	r24, 0x00	; 0
+ 4f0:	90 e0       	ldi	r25, 0x00	; 0
+ 4f2:	08 95       	ret
+
+000004f4 <RightSound>:
+
+
+
+
+int RightSound()
+{
+ 4f4:	cf 93       	push	r28
+ 4f6:	df 93       	push	r29
+
+	TCCR1A = 0b10000000; // PWM, OC1A On, Phase and Frequency Correct 
+ 4f8:	80 e8       	ldi	r24, 0x80	; 128
+ 4fa:	80 93 80 00 	sts	0x0080, r24
+	TCCR1B = 0b00010010; //prescaler 8	
+ 4fe:	82 e1       	ldi	r24, 0x12	; 18
+ 500:	80 93 81 00 	sts	0x0081, r24
+
+	sei(); //Interrupt Enable
+ 504:	78 94       	sei
+
+	
+		int dulation = 100;
+
+		tone(Do_5, dulation); 	//Ra Sound
+ 506:	88 e0       	ldi	r24, 0x08	; 8
+ 508:	64 e6       	ldi	r22, 0x64	; 100
+ 50a:	70 e0       	ldi	r23, 0x00	; 0
+ 50c:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(0, 50);
+ 510:	80 e0       	ldi	r24, 0x00	; 0
+ 512:	62 e3       	ldi	r22, 0x32	; 50
+ 514:	70 e0       	ldi	r23, 0x00	; 0
+ 516:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(Sol, dulation); 	//Sol Sound
+ 51a:	85 e0       	ldi	r24, 0x05	; 5
+ 51c:	64 e6       	ldi	r22, 0x64	; 100
+ 51e:	70 e0       	ldi	r23, 0x00	; 0
+ 520:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(0, 50);
+ 524:	80 e0       	ldi	r24, 0x00	; 0
+ 526:	62 e3       	ldi	r22, 0x32	; 50
+ 528:	70 e0       	ldi	r23, 0x00	; 0
+ 52a:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(Pa, dulation);  	//Pa Sound
+ 52e:	84 e0       	ldi	r24, 0x04	; 4
+ 530:	64 e6       	ldi	r22, 0x64	; 100
+ 532:	70 e0       	ldi	r23, 0x00	; 0
+ 534:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone1(0, 50);
+ 538:	c8 e8       	ldi	r28, 0x88	; 136
+ 53a:	d1 e0       	ldi	r29, 0x01	; 1
+ 53c:	80 e0       	ldi	r24, 0x00	; 0
+ 53e:	90 e0       	ldi	r25, 0x00	; 0
+ 540:	62 e3       	ldi	r22, 0x32	; 50
+ 542:	70 e0       	ldi	r23, 0x00	; 0
+ 544:	fe 01       	movw	r30, r28
+ 546:	09 95       	icall
+		tone(Ra, dulation); 	//Ra Sound
+ 548:	86 e0       	ldi	r24, 0x06	; 6
+ 54a:	64 e6       	ldi	r22, 0x64	; 100
+ 54c:	70 e0       	ldi	r23, 0x00	; 0
+ 54e:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(0, 50);
+ 552:	80 e0       	ldi	r24, 0x00	; 0
+ 554:	62 e3       	ldi	r22, 0x32	; 50
+ 556:	70 e0       	ldi	r23, 0x00	; 0
+ 558:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(Sol, dulation); 	//Sol Sound
+ 55c:	85 e0       	ldi	r24, 0x05	; 5
+ 55e:	64 e6       	ldi	r22, 0x64	; 100
+ 560:	70 e0       	ldi	r23, 0x00	; 0
+ 562:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(0, 50);
+ 566:	80 e0       	ldi	r24, 0x00	; 0
+ 568:	62 e3       	ldi	r22, 0x32	; 50
+ 56a:	70 e0       	ldi	r23, 0x00	; 0
+ 56c:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(Pa, dulation);  	//Pa Sound
+ 570:	84 e0       	ldi	r24, 0x04	; 4
+ 572:	64 e6       	ldi	r22, 0x64	; 100
+ 574:	70 e0       	ldi	r23, 0x00	; 0
+ 576:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone1(0, 50);
+ 57a:	80 e0       	ldi	r24, 0x00	; 0
+ 57c:	90 e0       	ldi	r25, 0x00	; 0
+ 57e:	62 e3       	ldi	r22, 0x32	; 50
+ 580:	70 e0       	ldi	r23, 0x00	; 0
+ 582:	fe 01       	movw	r30, r28
+ 584:	09 95       	icall
+
+	
+
+	return 0;
+}
+ 586:	80 e0       	ldi	r24, 0x00	; 0
+ 588:	90 e0       	ldi	r25, 0x00	; 0
+ 58a:	df 91       	pop	r29
+ 58c:	cf 91       	pop	r28
+ 58e:	08 95       	ret
+
+00000590 <LeftSound>:
+
+
+int LeftSound()
+{
+
+	TCCR1A = 0b10000000; // PWM, OC1A On, Phase and Frequency Correct 
+ 590:	80 e8       	ldi	r24, 0x80	; 128
+ 592:	80 93 80 00 	sts	0x0080, r24
+	TCCR1B = 0b00010010; //prescaler 8	
+ 596:	82 e1       	ldi	r24, 0x12	; 18
+ 598:	80 93 81 00 	sts	0x0081, r24
+
+	sei(); //Interrupt Enable
+ 59c:	78 94       	sei
+
+	
+		int dulation = 100;
+
+		tone(Ra, dulation); 	//Do_5 Sound
+ 59e:	86 e0       	ldi	r24, 0x06	; 6
+ 5a0:	64 e6       	ldi	r22, 0x64	; 100
+ 5a2:	70 e0       	ldi	r23, 0x00	; 0
+ 5a4:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(0, 50);
+ 5a8:	80 e0       	ldi	r24, 0x00	; 0
+ 5aa:	62 e3       	ldi	r22, 0x32	; 50
+ 5ac:	70 e0       	ldi	r23, 0x00	; 0
+ 5ae:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(Si, dulation); 	//Si Sound
+ 5b2:	87 e0       	ldi	r24, 0x07	; 7
+ 5b4:	64 e6       	ldi	r22, 0x64	; 100
+ 5b6:	70 e0       	ldi	r23, 0x00	; 0
+ 5b8:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(0, 50);
+ 5bc:	80 e0       	ldi	r24, 0x00	; 0
+ 5be:	62 e3       	ldi	r22, 0x32	; 50
+ 5c0:	70 e0       	ldi	r23, 0x00	; 0
+ 5c2:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(Ra, dulation);  	//Ra Sound
+ 5c6:	86 e0       	ldi	r24, 0x06	; 6
+ 5c8:	64 e6       	ldi	r22, 0x64	; 100
+ 5ca:	70 e0       	ldi	r23, 0x00	; 0
+ 5cc:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(0, 50);
+ 5d0:	80 e0       	ldi	r24, 0x00	; 0
+ 5d2:	62 e3       	ldi	r22, 0x32	; 50
+ 5d4:	70 e0       	ldi	r23, 0x00	; 0
+ 5d6:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(Ra, dulation); 	//Do_5 Sound
+ 5da:	86 e0       	ldi	r24, 0x06	; 6
+ 5dc:	64 e6       	ldi	r22, 0x64	; 100
+ 5de:	70 e0       	ldi	r23, 0x00	; 0
+ 5e0:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(0, 50);
+ 5e4:	80 e0       	ldi	r24, 0x00	; 0
+ 5e6:	62 e3       	ldi	r22, 0x32	; 50
+ 5e8:	70 e0       	ldi	r23, 0x00	; 0
+ 5ea:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(Si, dulation); 	//Si Sound
+ 5ee:	87 e0       	ldi	r24, 0x07	; 7
+ 5f0:	64 e6       	ldi	r22, 0x64	; 100
+ 5f2:	70 e0       	ldi	r23, 0x00	; 0
+ 5f4:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(0, 50);
+ 5f8:	80 e0       	ldi	r24, 0x00	; 0
+ 5fa:	62 e3       	ldi	r22, 0x32	; 50
+ 5fc:	70 e0       	ldi	r23, 0x00	; 0
+ 5fe:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(Ra, dulation);  	//Ra Sound
+ 602:	86 e0       	ldi	r24, 0x06	; 6
+ 604:	64 e6       	ldi	r22, 0x64	; 100
+ 606:	70 e0       	ldi	r23, 0x00	; 0
+ 608:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(0, 50);
+ 60c:	80 e0       	ldi	r24, 0x00	; 0
+ 60e:	62 e3       	ldi	r22, 0x32	; 50
+ 610:	70 e0       	ldi	r23, 0x00	; 0
+ 612:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+	return 0;
+}
+ 616:	80 e0       	ldi	r24, 0x00	; 0
+ 618:	90 e0       	ldi	r25, 0x00	; 0
+ 61a:	08 95       	ret
+
+0000061c <StartSound>:
+
+/////////////////////////////////////////////////       Start sound function   ///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+int StartSound()
+{
+ 61c:	cf 93       	push	r28
+ 61e:	df 93       	push	r29
+
+	TCCR1A = 0b10000000; // PWM, OC1A On, Phase and Frequency Correct 
+ 620:	80 e8       	ldi	r24, 0x80	; 128
+ 622:	80 93 80 00 	sts	0x0080, r24
+	TCCR1B = 0b00010010; //prescaler 8	
+ 626:	82 e1       	ldi	r24, 0x12	; 18
+ 628:	80 93 81 00 	sts	0x0081, r24
+
+	sei(); //Interrupt Enable
+ 62c:	78 94       	sei
+
+	
+		int dulation = 100;
+
+		tone1(Ra, dulation);    //Ra Sound
+ 62e:	c8 e8       	ldi	r28, 0x88	; 136
+ 630:	d1 e0       	ldi	r29, 0x01	; 1
+ 632:	86 e0       	ldi	r24, 0x06	; 6
+ 634:	90 e0       	ldi	r25, 0x00	; 0
+ 636:	64 e6       	ldi	r22, 0x64	; 100
+ 638:	70 e0       	ldi	r23, 0x00	; 0
+ 63a:	fe 01       	movw	r30, r28
+ 63c:	09 95       	icall
+		tone1(0, 50);
+ 63e:	80 e0       	ldi	r24, 0x00	; 0
+ 640:	90 e0       	ldi	r25, 0x00	; 0
+ 642:	62 e3       	ldi	r22, 0x32	; 50
+ 644:	70 e0       	ldi	r23, 0x00	; 0
+ 646:	fe 01       	movw	r30, r28
+ 648:	09 95       	icall
+		tone1(Pa, dulation);	//Pa Sound
+ 64a:	84 e0       	ldi	r24, 0x04	; 4
+ 64c:	90 e0       	ldi	r25, 0x00	; 0
+ 64e:	64 e6       	ldi	r22, 0x64	; 100
+ 650:	70 e0       	ldi	r23, 0x00	; 0
+ 652:	fe 01       	movw	r30, r28
+ 654:	09 95       	icall
+		tone1(0, 50);
+ 656:	80 e0       	ldi	r24, 0x00	; 0
+ 658:	90 e0       	ldi	r25, 0x00	; 0
+ 65a:	62 e3       	ldi	r22, 0x32	; 50
+ 65c:	70 e0       	ldi	r23, 0x00	; 0
+ 65e:	fe 01       	movw	r30, r28
+ 660:	09 95       	icall
+		tone(Pa, dulation);		//Pa Sound
+ 662:	84 e0       	ldi	r24, 0x04	; 4
+ 664:	64 e6       	ldi	r22, 0x64	; 100
+ 666:	70 e0       	ldi	r23, 0x00	; 0
+ 668:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(0, 50);
+ 66c:	80 e0       	ldi	r24, 0x00	; 0
+ 66e:	62 e3       	ldi	r22, 0x32	; 50
+ 670:	70 e0       	ldi	r23, 0x00	; 0
+ 672:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(Pa, dulation);		//Pa Sound
+ 676:	84 e0       	ldi	r24, 0x04	; 4
+ 678:	64 e6       	ldi	r22, 0x64	; 100
+ 67a:	70 e0       	ldi	r23, 0x00	; 0
+ 67c:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(0, 50);
+ 680:	80 e0       	ldi	r24, 0x00	; 0
+ 682:	62 e3       	ldi	r22, 0x32	; 50
+ 684:	70 e0       	ldi	r23, 0x00	; 0
+ 686:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(Pa, dulation);		//Pa Sound
+ 68a:	84 e0       	ldi	r24, 0x04	; 4
+ 68c:	64 e6       	ldi	r22, 0x64	; 100
+ 68e:	70 e0       	ldi	r23, 0x00	; 0
+ 690:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone1(0, 50);
+ 694:	80 e0       	ldi	r24, 0x00	; 0
+ 696:	90 e0       	ldi	r25, 0x00	; 0
+ 698:	62 e3       	ldi	r22, 0x32	; 50
+ 69a:	70 e0       	ldi	r23, 0x00	; 0
+ 69c:	fe 01       	movw	r30, r28
+ 69e:	09 95       	icall
+		tone1(Pa, dulation);	//Pa Sound
+ 6a0:	84 e0       	ldi	r24, 0x04	; 4
+ 6a2:	90 e0       	ldi	r25, 0x00	; 0
+ 6a4:	64 e6       	ldi	r22, 0x64	; 100
+ 6a6:	70 e0       	ldi	r23, 0x00	; 0
+ 6a8:	fe 01       	movw	r30, r28
+ 6aa:	09 95       	icall
+		tone(0, 50);
+ 6ac:	80 e0       	ldi	r24, 0x00	; 0
+ 6ae:	62 e3       	ldi	r22, 0x32	; 50
+ 6b0:	70 e0       	ldi	r23, 0x00	; 0
+ 6b2:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(Sol, dulation);	//Sol Sound
+ 6b6:	85 e0       	ldi	r24, 0x05	; 5
+ 6b8:	64 e6       	ldi	r22, 0x64	; 100
+ 6ba:	70 e0       	ldi	r23, 0x00	; 0
+ 6bc:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(0, 50);
+ 6c0:	80 e0       	ldi	r24, 0x00	; 0
+ 6c2:	62 e3       	ldi	r22, 0x32	; 50
+ 6c4:	70 e0       	ldi	r23, 0x00	; 0
+ 6c6:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(Pa, dulation);		//Pa Sound
+ 6ca:	84 e0       	ldi	r24, 0x04	; 4
+ 6cc:	64 e6       	ldi	r22, 0x64	; 100
+ 6ce:	70 e0       	ldi	r23, 0x00	; 0
+ 6d0:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(0, 50);
+ 6d4:	80 e0       	ldi	r24, 0x00	; 0
+ 6d6:	62 e3       	ldi	r22, 0x32	; 50
+ 6d8:	70 e0       	ldi	r23, 0x00	; 0
+ 6da:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(Do, dulation);		//Do Sound
+ 6de:	81 e0       	ldi	r24, 0x01	; 1
+ 6e0:	64 e6       	ldi	r22, 0x64	; 100
+ 6e2:	70 e0       	ldi	r23, 0x00	; 0
+ 6e4:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(0, 50);
+ 6e8:	80 e0       	ldi	r24, 0x00	; 0
+ 6ea:	62 e3       	ldi	r22, 0x32	; 50
+ 6ec:	70 e0       	ldi	r23, 0x00	; 0
+ 6ee:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(Pa, dulation);		//Pa Sound
+ 6f2:	84 e0       	ldi	r24, 0x04	; 4
+ 6f4:	64 e6       	ldi	r22, 0x64	; 100
+ 6f6:	70 e0       	ldi	r23, 0x00	; 0
+ 6f8:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+		tone(0, 50);
+ 6fc:	80 e0       	ldi	r24, 0x00	; 0
+ 6fe:	62 e3       	ldi	r22, 0x32	; 50
+ 700:	70 e0       	ldi	r23, 0x00	; 0
+ 702:	0e 94 e6 01 	call	0x3cc	; 0x3cc <tone>
+
+
+	return 0;
+}
+ 706:	80 e0       	ldi	r24, 0x00	; 0
+ 708:	90 e0       	ldi	r25, 0x00	; 0
+ 70a:	df 91       	pop	r29
+ 70c:	cf 91       	pop	r28
+ 70e:	08 95       	ret
+
+00000710 <__udivmodhi4>:
+ 710:	aa 1b       	sub	r26, r26
+ 712:	bb 1b       	sub	r27, r27
+ 714:	51 e1       	ldi	r21, 0x11	; 17
+ 716:	07 c0       	rjmp	.+14     	; 0x726 <__udivmodhi4_ep>
+
+00000718 <__udivmodhi4_loop>:
+ 718:	aa 1f       	adc	r26, r26
+ 71a:	bb 1f       	adc	r27, r27
+ 71c:	a6 17       	cp	r26, r22
+ 71e:	b7 07       	cpc	r27, r23
+ 720:	10 f0       	brcs	.+4      	; 0x726 <__udivmodhi4_ep>
+ 722:	a6 1b       	sub	r26, r22
+ 724:	b7 0b       	sbc	r27, r23
+
+00000726 <__udivmodhi4_ep>:
+ 726:	88 1f       	adc	r24, r24
+ 728:	99 1f       	adc	r25, r25
+ 72a:	5a 95       	dec	r21
+ 72c:	a9 f7       	brne	.-22     	; 0x718 <__udivmodhi4_loop>
+ 72e:	80 95       	com	r24
+ 730:	90 95       	com	r25
+ 732:	bc 01       	movw	r22, r24
+ 734:	cd 01       	movw	r24, r26
+ 736:	08 95       	ret
+
+00000738 <__divmodhi4>:
+ 738:	97 fb       	bst	r25, 7
+ 73a:	09 2e       	mov	r0, r25
+ 73c:	07 26       	eor	r0, r23
+ 73e:	0a d0       	rcall	.+20     	; 0x754 <__divmodhi4_neg1>
+ 740:	77 fd       	sbrc	r23, 7
+ 742:	04 d0       	rcall	.+8      	; 0x74c <__divmodhi4_neg2>
+ 744:	e5 df       	rcall	.-54     	; 0x710 <__udivmodhi4>
+ 746:	06 d0       	rcall	.+12     	; 0x754 <__divmodhi4_neg1>
+ 748:	00 20       	and	r0, r0
+ 74a:	1a f4       	brpl	.+6      	; 0x752 <__divmodhi4_exit>
+
+0000074c <__divmodhi4_neg2>:
+ 74c:	70 95       	com	r23
+ 74e:	61 95       	neg	r22
+ 750:	7f 4f       	sbci	r23, 0xFF	; 255
+
+00000752 <__divmodhi4_exit>:
+ 752:	08 95       	ret
+
+00000754 <__divmodhi4_neg1>:
+ 754:	f6 f7       	brtc	.-4      	; 0x752 <__divmodhi4_exit>
+ 756:	90 95       	com	r25
+ 758:	81 95       	neg	r24
+ 75a:	9f 4f       	sbci	r25, 0xFF	; 255
+ 75c:	08 95       	ret
+
+0000075e <__divmodsi4>:
+ 75e:	97 fb       	bst	r25, 7
+ 760:	09 2e       	mov	r0, r25
+ 762:	05 26       	eor	r0, r21
+ 764:	0e d0       	rcall	.+28     	; 0x782 <__divmodsi4_neg1>
+ 766:	57 fd       	sbrc	r21, 7
+ 768:	04 d0       	rcall	.+8      	; 0x772 <__divmodsi4_neg2>
+ 76a:	14 d0       	rcall	.+40     	; 0x794 <__udivmodsi4>
+ 76c:	0a d0       	rcall	.+20     	; 0x782 <__divmodsi4_neg1>
+ 76e:	00 1c       	adc	r0, r0
+ 770:	38 f4       	brcc	.+14     	; 0x780 <__divmodsi4_exit>
+
+00000772 <__divmodsi4_neg2>:
+ 772:	50 95       	com	r21
+ 774:	40 95       	com	r20
+ 776:	30 95       	com	r19
+ 778:	21 95       	neg	r18
+ 77a:	3f 4f       	sbci	r19, 0xFF	; 255
+ 77c:	4f 4f       	sbci	r20, 0xFF	; 255
+ 77e:	5f 4f       	sbci	r21, 0xFF	; 255
+
+00000780 <__divmodsi4_exit>:
+ 780:	08 95       	ret
+
+00000782 <__divmodsi4_neg1>:
+ 782:	f6 f7       	brtc	.-4      	; 0x780 <__divmodsi4_exit>
+ 784:	90 95       	com	r25
+ 786:	80 95       	com	r24
+ 788:	70 95       	com	r23
+ 78a:	61 95       	neg	r22
+ 78c:	7f 4f       	sbci	r23, 0xFF	; 255
+ 78e:	8f 4f       	sbci	r24, 0xFF	; 255
+ 790:	9f 4f       	sbci	r25, 0xFF	; 255
+ 792:	08 95       	ret
+
+00000794 <__udivmodsi4>:
+ 794:	a1 e2       	ldi	r26, 0x21	; 33
+ 796:	1a 2e       	mov	r1, r26
+ 798:	aa 1b       	sub	r26, r26
+ 79a:	bb 1b       	sub	r27, r27
+ 79c:	fd 01       	movw	r30, r26
+ 79e:	0d c0       	rjmp	.+26     	; 0x7ba <__udivmodsi4_ep>
+
+000007a0 <__udivmodsi4_loop>:
+ 7a0:	aa 1f       	adc	r26, r26
+ 7a2:	bb 1f       	adc	r27, r27
+ 7a4:	ee 1f       	adc	r30, r30
+ 7a6:	ff 1f       	adc	r31, r31
+ 7a8:	a2 17       	cp	r26, r18
+ 7aa:	b3 07       	cpc	r27, r19
+ 7ac:	e4 07       	cpc	r30, r20
+ 7ae:	f5 07       	cpc	r31, r21
+ 7b0:	20 f0       	brcs	.+8      	; 0x7ba <__udivmodsi4_ep>
+ 7b2:	a2 1b       	sub	r26, r18
+ 7b4:	b3 0b       	sbc	r27, r19
+ 7b6:	e4 0b       	sbc	r30, r20
+ 7b8:	f5 0b       	sbc	r31, r21
+
+000007ba <__udivmodsi4_ep>:
+ 7ba:	66 1f       	adc	r22, r22
+ 7bc:	77 1f       	adc	r23, r23
+ 7be:	88 1f       	adc	r24, r24
+ 7c0:	99 1f       	adc	r25, r25
+ 7c2:	1a 94       	dec	r1
+ 7c4:	69 f7       	brne	.-38     	; 0x7a0 <__udivmodsi4_loop>
+ 7c6:	60 95       	com	r22
+ 7c8:	70 95       	com	r23
+ 7ca:	80 95       	com	r24
+ 7cc:	90 95       	com	r25
+ 7ce:	9b 01       	movw	r18, r22
+ 7d0:	ac 01       	movw	r20, r24
+ 7d2:	bd 01       	movw	r22, r26
+ 7d4:	cf 01       	movw	r24, r30
+ 7d6:	08 95       	ret
+
+000007d8 <_exit>:
+ 7d8:	f8 94       	cli
+
+000007da <__stop_program>:
+ 7da:	ff cf       	rjmp	.-2      	; 0x7da <__stop_program>
