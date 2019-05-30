@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-<AVRWorkspace><IOSettings><CurrentRegisters/></IOSettings><part name="ATMEGA32U4"/><Files><File00000 Name="C:\Users\Lee Chang Yoon\Desktop\Basic_Moblie_Project\Main.c" Position="591 328 1360 534" LineCol="66 0"/><File00001 Name="C:\Users\Lee Chang Yoon\Desktop\Basic_Moblie_Project\Direction.c" Position="617 354 1378 530" LineCol="15 0"/><File00002 Name="C:\Users\Lee Chang Yoon\Desktop\Basic_Moblie_Project\Global.h" Position="643 380 1404 556" LineCol="13 0"/></Files></AVRWorkspace>
-=======
-<AVRWorkspace><IOSettings><CurrentRegisters/></IOSettings><part name="ATMEGA32U4"/><Files><File00000 Name="C:\Users\Lee Chang Yoon\Desktop\Basic_Moblie_Project\Main.c" Position="591 328 1360 534" LineCol="66 0"/><File00001 Name="C:\Users\Lee Chang Yoon\Desktop\Basic_Moblie_Project\Direction.c" Position="617 354 1378 530" LineCol="15 0"/><File00002 Name="C:\Users\Lee Chang Yoon\Desktop\Basic_Moblie_Project\Global.h" Position="643 380 1404 556" LineCol="13 0"/></Files></AVRWorkspace>
->>>>>>> a2c9528c2ca7c84b671a9f8a5cc03cc70a6085b1
