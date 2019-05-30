@@ -39,3 +39,8 @@ This repository is for basic mobile lab project 1
 3. Realized polling interrupt method.
 4. Realized sound functions.
 5. Fixed some of the functions related to directions.
+
+## 2019.05.30
+1. Deleted the previous version.
+2. Attached new version.
+3. Fixed some functions ans added Sound.c.
