@@ -5,7 +5,7 @@ This repository is for basic mobile lab project 1
 Thanks for my co-worker Yongkwan Park. We have finished our first lab project! ChangYoon 2019.06.06
 
 ## Photos of the TekBot
-![TekBot](final.PNG)
+![](final.PNG)
 
 # TekBot 
 2019/3 ~ 6, we had class 'Basic Mobile Project 1". Here, we have done a project which contains a robot that detects collision and changes direction.
@@ -51,13 +51,13 @@ Function **Main** is a code for collision detection. The function **init** sets 
 After testing, TekBot worked well. Thanks for everbody for helping us to finish this project. 
 
 **Start TekBot by pushing both button**
-![image](final_1.PNG)
+![](final_1.PNG)
 
 **When left button is clicked**
-![image](final_2.PNG)
+![](final_2.PNG)
 
 **When right button is clicked**
-![image](final_3.PNG)
+![](final_3.PNG)
 
 **When both buttons are clicked**
-![image](final_4.PNG) 
+![](final_4.PNG) 
