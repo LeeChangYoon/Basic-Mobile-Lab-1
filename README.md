@@ -51,13 +51,17 @@ Function **Main** is a code for collision detection. The function **init** sets 
 After testing, TekBot worked well. Thanks for everbody for helping us to finish this project. 
 
 **Start TekBot by pushing both button**
+
 ![](final_1.gif)
 
 **When left button is clicked**
+
 ![](final_2.gif)
 
 **When right button is clicked**
+
 ![](final_3.gif)
 
 **When both buttons are clicked**
+
 ![](final_4.gif) 
