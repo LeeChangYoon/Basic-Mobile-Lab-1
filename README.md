@@ -1,4 +1,4 @@
-# Basic-Mobile-Lab-1
+# Basic Mobile Lab1
 This repository is for basic mobile lab project 1
 
 ## Project finished!
